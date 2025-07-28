@@ -70,7 +70,7 @@ export default function Hero() {
               <div className="text-blue-200 font-medium">
                 {heroStats.jaStimmen}
               </div>
-              <div className="text-sm text-blue-300 mt-2">
+              <div className="text-base text-blue-300 mt-2">
                 beim Bürgerentscheid
               </div>
             </div>

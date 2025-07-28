@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getAllPostSlugs, getPostData } from '@/lib/markdown';
+import SEO from '@/components/SEO'; // Importiere die SEO-Komponente
 
 interface BlogPostPageProps {
   params: {
@@ -16,27 +17,28 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  try {
-    const post = await getPostData(params.slug);
-    return {
-      title: post.title,
-      description: post.excerpt,
-      openGraph: {
-        title: post.title,
-        description: post.excerpt,
-        type: 'article',
-        publishedTime: post.date,
-        authors: post.author ? [post.author] : undefined,
-        images: post.image ? [post.image] : undefined,
-      },
-    };
-  } catch {
-    return {
-      title: 'Beitrag nicht gefunden',
-    };
-  }
-}
+// Entferne generateMetadata, da SEO-Komponente dies übernimmt
+// export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+//   try {
+//     const post = await getPostData(params.slug);
+//     return {
+//       title: post.title,
+//       description: post.excerpt,
+//       openGraph: {
+//         title: post.title,
+//         description: post.excerpt,
+//         type: 'article',
+//         publishedTime: post.date,
+//         authors: post.author ? [post.author] : undefined,
+//         images: post.image ? [post.image] : undefined,
+//       },
+//     };
+//   } catch {
+//     return {
+//       title: 'Beitrag nicht gefunden',
+//     };
+//   }
+// }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   let post;
@@ -49,6 +51,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+        title={post.title}
+        description={post.excerpt}
+        image={post.image}
+        url={`/blog/${post.slug}`} // Annahme: slug ist Teil der URL
+      />
       {/* Breadcrumb */}
       <div className="bg-white border-b">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -124,7 +132,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* Inhalt */}
         <div className="bg-white rounded-xl shadow-sm p-8 md:p-12">
-          <div 
+          <div
             className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-ul:text-gray-700 prose-ol:text-gray-700"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />

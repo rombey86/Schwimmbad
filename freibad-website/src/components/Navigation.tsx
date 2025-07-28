@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { navigation } from '@/data/config';
 import { NavigationItem } from '@/types';
@@ -8,10 +9,18 @@ import { NavigationItem } from '@/types';
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const toggleDropdown = (label: string) => {
     setOpenDropdown(openDropdown === label ? null : label);
   };
+
+  useEffect(() => {
+    if (openDropdown && dropdownRef.current) {
+      const firstLink = dropdownRef.current.querySelector('a');
+      firstLink?.focus();
+    }
+  }, [openDropdown]);
 
   const NavLink = ({ item }: { item: NavigationItem }) => {
     if (item.children) {
@@ -37,9 +46,13 @@ export default function Navigation() {
           </button>
           
           {/* Desktop Dropdown */}
-          <div className={`absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50 transition-all duration-200 ${
-            openDropdown === item.label ? 'opacity-100 visible' : 'opacity-0 invisible'
-          } hidden md:block`}>
+          <div
+            ref={dropdownRef}
+            className={`absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50 transition-all duration-200 ${
+              openDropdown === item.label ? 'opacity-100 visible' : 'opacity-0 invisible'
+            } hidden md:block`}
+            tabIndex={-1}
+          >
             <div className="py-1">
               {item.children.map((child) => (
                 <Link
@@ -114,6 +127,7 @@ export default function Navigation() {
             className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors duration-200"
             aria-expanded={isOpen}
             aria-label="Hauptmenü"
+            tabIndex={0}
           >
             <svg
               className={`h-6 w-6 transition-transform duration-200 ${isOpen ? 'rotate-90' : ''}`}

@@ -1,9 +1,14 @@
 import Hero from '@/components/Hero';
 import NewsSection from '@/components/NewsSection';
+import SEO from '@/components/SEO'; // Importiere die SEO-Komponente
 
 export default function Home() {
   return (
     <>
+      <SEO
+        title="Startseite"
+        description="Offizielle Website des Fördervereins Freibad Steinrausch e.V. – Informationen, Neuigkeiten und wie Sie uns unterstützen können."
+      />
       <Hero />
       <NewsSection />
       
@@ -28,7 +33,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Gemeinschaft</h3>
               <p className="text-gray-600">
-                Ein Ort der Begegnung für alle Generationen, wo Nachbarn zu Freunden werden 
+                Ein Ort der Begegnung für alle Generationen, wo Nachbarn zu Freunden werden
                 und gemeinsame Erinnerungen entstehen.
               </p>
             </div>
@@ -41,7 +46,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Gesundheit</h3>
               <p className="text-gray-600">
-                Schwimmen ist eine der gesündesten Sportarten. Unser Freibad bietet 
+                Schwimmen ist eine der gesündesten Sportarten. Unser Freibad bietet
                 Raum für Fitness, Entspannung und Wohlbefinden.
               </p>
             </div>
@@ -54,7 +59,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Tradition</h3>
               <p className="text-gray-600">
-                Seit Generationen ist unser Freibad ein wichtiger Teil der lokalen 
+                Seit Generationen ist unser Freibad ein wichtiger Teil der lokalen
                 Kultur und Identität unserer Gemeinde.
               </p>
             </div>
@@ -69,7 +74,7 @@ export default function Home() {
             Werden Sie Teil der Bewegung
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Jede Unterstützung zählt! Helfen Sie uns dabei, unser Freibad zu retten 
+            Jede Unterstützung zählt! Helfen Sie uns dabei, unser Freibad zu retten
             und für zukünftige Generationen zu erhalten.
           </p>
           
