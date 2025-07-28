@@ -1,5 +1,3 @@
-"use client";
-
 import Head from 'next/head';
 import { usePathname } from 'next/navigation';
 
@@ -10,40 +8,23 @@ interface SEOProps {
   url?: string;
 }
 
-const SEO: React.FC<SEOProps> = ({ title, description, image, url }) => {
+export default function SEO({ title, description, image, url }: SEOProps) {
   const pathname = usePathname();
-  const siteTitle = "Förderverein Freibad Steinrausch e.V.";
-  const defaultDescription = "Offizielle Website des Fördervereins Freibad Steinrausch e.V. – Informationen, Neuigkeiten und wie Sie uns unterstützen können.";
-  const defaultImage = "/images/og-image.jpg"; // Pfad zu einem Standard-Open-Graph-Bild
-  const defaultUrl = "https://www.freibad-steinrausch.de"; // Ihre Website-URL
-
-  const seoTitle = title ? `${title} | ${siteTitle}` : siteTitle;
-  const seoDescription = description || defaultDescription;
-  const seoImage = image || defaultImage;
-  const seoUrl = url || `${defaultUrl}${pathname}`;
+  const currentUrl = url || pathname || '';
 
   return (
     <Head>
-      <title>{seoTitle}</title>
-      <meta name="description" content={seoDescription} />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/favicon.ico" />
-
-      {/* Open Graph / Facebook */}
+      {title && <title>{title}</title>}
+      {description && <meta name="description" content={description} />}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={seoUrl} />
-      <meta property="og:title" content={seoTitle} />
-      <meta property="og:description" content={seoDescription} />
-      <meta property="og:image" content={seoImage} />
-
-      {/* Twitter */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={seoUrl} />
-      <meta property="twitter:title" content={seoTitle} />
-      <meta property="twitter:description" content={seoDescription} />
-      <meta property="twitter:image" content={seoImage} />
+      {title && <meta property="og:title" content={title} />}
+      {description && <meta property="og:description" content={description} />}
+      {image && <meta property="og:image" content={image} />}
+      <meta property="og:url" content={currentUrl} />
+      <meta name="twitter:card" content="summary_large_image" />
+      {title && <meta name="twitter:title" content={title} />}
+      {description && <meta name="twitter:description" content={description} />}
+      {image && <meta name="twitter:image" content={image} />}
     </Head>
   );
-};
-
-export default SEO;
+}
