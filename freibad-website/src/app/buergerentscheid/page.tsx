@@ -83,7 +83,7 @@ export default function BuergerentscheidPage() {
               </div>
               <div className="text-center text-gray-600">
                 <p className="mb-2">
-                  <strong>Frage:</strong> "Sind Sie dafür, dass die Gemeinde das Freibad saniert und modernisiert?"
+                  <strong>Frage:</strong> Sind Sie dafür, dass die Gemeinde das Freibad saniert und modernisiert?
                 </p>
                 <p className="text-sm">
                   Wahlberechtigt: 10.625 Personen | Abgegebene Stimmen: 7.740 | Wahlbeteiligung: 72,3%

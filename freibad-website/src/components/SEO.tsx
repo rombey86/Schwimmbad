@@ -1,5 +1,7 @@
+"use client";
+
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 interface SEOProps {
   title?: string;
@@ -9,7 +11,7 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({ title, description, image, url }) => {
-  const router = useRouter();
+  const pathname = usePathname();
   const siteTitle = "Förderverein Freibad Steinrausch e.V.";
   const defaultDescription = "Offizielle Website des Fördervereins Freibad Steinrausch e.V. – Informationen, Neuigkeiten und wie Sie uns unterstützen können.";
   const defaultImage = "/images/og-image.jpg"; // Pfad zu einem Standard-Open-Graph-Bild
@@ -18,7 +20,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, image, url }) => {
   const seoTitle = title ? `${title} | ${siteTitle}` : siteTitle;
   const seoDescription = description || defaultDescription;
   const seoImage = image || defaultImage;
-  const seoUrl = url || `${defaultUrl}${router.asPath}`;
+  const seoUrl = url || `${defaultUrl}${pathname}`;
 
   return (
     <Head>

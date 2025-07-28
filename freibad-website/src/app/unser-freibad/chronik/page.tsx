@@ -56,9 +56,8 @@ export default function ChronikPage() {
   const getYear = (dateString: string) => {
     return new Date(dateString).getFullYear();
   };
-
   // Gruppiere Events nach Jahrzehnten
-  const groupEventsByDecade = () => {
+  /*const groupEventsByDecade = () => {
     const decades: { [key: string]: typeof chronikEvents } = {};
     
     chronikEvents.forEach(event => {
@@ -73,9 +72,9 @@ export default function ChronikPage() {
     });
 
     return decades;
-  };
+  };*/
 
-  const decades = groupEventsByDecade();
+  //const decades = groupEventsByDecade();
 
   return (
     <div className="min-h-screen bg-gray-50">

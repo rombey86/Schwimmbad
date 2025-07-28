@@ -140,8 +140,8 @@ export default function DatenschutzPage() {
           <p>
             Diese Seite nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung vertraulicher Inhalte, 
             wie zum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung. 
-            Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von "http://" 
-            auf "https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+            Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von &apos;http://&apos; 
+            auf &apos;https://&apos; wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
           </p>
 
           <h2>9. Änderungen der Datenschutzerklärung</h2>
