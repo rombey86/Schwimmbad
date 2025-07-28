@@ -218,5 +218,5 @@ Dieses Projekt steht unter der MIT-Lizenz. Siehe `LICENSE` für Details.
 **Entwickelt mit ❤️ für unser Freibad**
 
 
-
-Responsive Design und Barrierefreiheit optimieren
+SEO-Optimierung mit next/head implementieren
+Finale Tests und Produktionsbereitschaft prüfen
