@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { freibadFacts, getAllCategories, getCategoryLabel, getCategoryColor, getFreibadFactsByCategory } from '@/data/freibad-facts';
+import { getAllCategories, getCategoryLabel, getCategoryColor, getFreibadFactsByCategory } from '@/data/freibad-facts';
 
 export const metadata: Metadata = {
   title: 'Fakten & Zahlen',

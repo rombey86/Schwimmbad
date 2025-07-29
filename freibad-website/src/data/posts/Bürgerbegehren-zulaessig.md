@@ -1,5 +1,5 @@
 ---
-title: "Bürgerbegehren zulässig – Bürgerentscheid am 21. August?
+title: "Bürgerbegehren zulässig – Bürgerentscheid am 21. August?"
 date: "2022-05-17"
 excerpt: "2. Bürgerbegehren zulässig"
 image: "https://www.rettet-das-freibad-niederkruechten.de/wp-content/uploads/2022/05/20220517-HP-Buergerentscheid-soll-am-21.8.2022-stattfinden.png"
