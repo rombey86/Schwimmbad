@@ -24,7 +24,7 @@ export default function DatenschutzPage() {
       </div>
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-gray-900">
         <div className="bg-white rounded-xl shadow-sm p-8 prose prose-lg max-w-none">
           
           <h2>1. Verantwortlicher</h2>
@@ -161,7 +161,7 @@ export default function DatenschutzPage() {
           </p>
 
           <div className="mt-12 pt-8 border-t border-gray-200">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-900">
               <strong>Stand:</strong> Januar 2024
             </p>
           </div>

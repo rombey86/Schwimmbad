@@ -16,7 +16,7 @@ export default function ImpressumPage() {
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
               Impressum
             </h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-900">
               Rechtliche Angaben gemäß § 5 TMG
             </p>
           </div>
