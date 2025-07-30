@@ -1,15 +1,5 @@
 // Grundlegende Typen für die Freibad-Website
 
-export interface BlogPost {
-  slug: string;
-  title: string;
-  date: string;
-  excerpt: string;
-  content: string;
-  image?: string;
-  author?: string;
-  tags?: string[];
-}
 
 export interface ChronikEvent {
   id: string;

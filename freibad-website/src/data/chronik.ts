@@ -132,16 +132,14 @@ export const chronikEvents: ChronikEvent[] = [
     date: '2024-02-28',
     title: 'Fördermittel bewilligt',
     description: 'Durchbruch: 2,86 Millionen Euro Fördermittel für die Modernisierung werden offiziell bewilligt.',
-    category: 'milestone',
-    link: '/blog/foerdermittel-bewilligt'
+    category: 'milestone'
   },
   {
     id: '20',
     date: '2024-03-15',
     title: 'Bürgerentscheid erfolgreich',
     description: 'Historischer Tag: 63,7% der Bürger stimmen für die Rettung und Modernisierung des Freibads.',
-    category: 'decision',
-    link: '/blog/buergerentscheid-erfolgreich'
+    category: 'decision'
   },
   {
     id: '21',

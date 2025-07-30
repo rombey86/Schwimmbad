@@ -2,7 +2,7 @@
 title: "Bürgerentscheid erfolgreich: 63,7% stimmen für Freibad-Rettung"
 date: "2024-03-15"
 excerpt: "Ein überwältigender Erfolg für unser Freibad! Die Bürgerinnen und Bürger haben mit deutlicher Mehrheit für die Rettung und Modernisierung gestimmt."
-image: "/images/news/buergerentscheid-erfolg.jpg"
+image: "/images/Freibad_Niederkrüchten_Bahnen_2017-scaled.jpg"
 author: "Förderverein Freibad"
 tags: ["Bürgerentscheid", "Erfolg", "Abstimmung"]
 ---

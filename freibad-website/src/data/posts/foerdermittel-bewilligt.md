@@ -2,7 +2,7 @@
 title: "Fördermittel in Höhe von 2,86 Millionen Euro bewilligt"
 date: "2024-02-28"
 excerpt: "Großartige Neuigkeiten: Die Fördermittel für die Modernisierung unseres Freibads wurden offiziell bewilligt. Jetzt kann die Planung konkret beginnen."
-image: "/images/news/foerdermittel-bewilligt.jpg"
+image: "/images/Freibad_Niederkrüchten_Bahnen_2017-scaled.jpg"
 author: "Gemeinderat"
 tags: ["Förderung", "Finanzierung", "Modernisierung"]
 ---

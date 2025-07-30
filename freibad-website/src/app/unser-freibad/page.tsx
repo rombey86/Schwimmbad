@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Unser Freibad',
+  title: 'Freibad Niederkrüchten',
   description: 'Entdecken Sie die Geschichte, Fakten und die besondere Kultur unseres Freibads',
 };
 
@@ -19,7 +19,7 @@ export default function UnserFreibadPage() {
               </svg>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Unser Freibad
+              Unser Freibad in Niederkrüchten
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
               Mehr als nur ein Schwimmbad - ein Ort der Gemeinschaft, 
@@ -159,28 +159,6 @@ export default function UnserFreibadPage() {
             </Link>
 
             {/* Aktuelles */}
-            <Link
-              href="/blog"
-              className="group bg-gradient-to-br from-gray-600 to-gray-700 rounded-xl p-8 text-white hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:scale-105"
-            >
-              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors duration-300">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clipRule="evenodd" />
-                  <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-3">Aktuelles</h3>
-              <p className="text-gray-100 mb-4">
-                Die neuesten Entwicklungen und Nachrichten rund um 
-                unser Freibad-Rettungsprojekt.
-              </p>
-              <div className="flex items-center text-gray-200 group-hover:text-white transition-colors duration-300">
-                <span className="font-medium">Zu den News</span>
-                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
           </div>
         </div>
       </section>

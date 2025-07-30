@@ -1,113 +1,98 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { remark } from 'remark';
-import html from 'remark-html';
-import { BlogPost } from '@/types';
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import { remark } from "remark";
+import html from "remark-html";
 
-const postsDirectory = path.join(process.cwd(), 'src/data/posts');
+const postsDirectory = path.join(process.cwd(), "src/data/posts");
 
+// Default-Bild, falls keins angegeben wurde
+const defaultImage = "/images/Freibad_Niederkrüchten_Bahnen_2017-scaled.jpg";
+
+export type BlogPost = {
+  slug: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  author: string;
+  tags: string[];
+};
+
+// Hilfsfunktion: überprüft, ob der Dateiname gültig ist
+function isValidPostFile(fileName: string): boolean {
+  return fileName.endsWith(".md");
+}
+
+// Gibt alle vorhandenen Slugs zurück – für getStaticPaths
+export function getAllPostSlugs(): { slug: string }[] {
+  if (!fs.existsSync(postsDirectory)) return [];
+
+  return fs
+    .readdirSync(postsDirectory)
+    .filter(isValidPostFile)
+    .map((file) => ({
+      slug: file.replace(/\.md$/, ""),
+    }));
+}
+
+// Gibt die sortierten Blogposts zurück
 export function getSortedPostsData(): BlogPost[] {
-  // Erstelle das Posts-Verzeichnis falls es nicht existiert
-  if (!fs.existsSync(postsDirectory)) {
-    fs.mkdirSync(postsDirectory, { recursive: true });
-    return [];
-  }
+  if (!fs.existsSync(postsDirectory)) return [];
 
-  // Hole alle Dateinamen aus dem Posts-Verzeichnis
   const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames
-    .filter((fileName) => fileName.endsWith('.md'))
-    .map((fileName) => {
-      // Entferne ".md" vom Dateinamen um die ID zu erhalten
-      const slug = fileName.replace(/\.md$/, '');
 
-      // Lese die Markdown-Datei als String
-      const fullPath = path.join(postsDirectory, fileName);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const allPosts = fileNames
+    .filter(isValidPostFile)
+    .map((file) => {
+      const slug = file.replace(/\.md$/, "");
+      const fullPath = path.join(postsDirectory, file);
+      const fileContents = fs.readFileSync(fullPath, "utf8");
 
-      // Verwende gray-matter um die Metadaten zu parsen
-      const matterResult = matter(fileContents);
+      const { data, content } = matter(fileContents);
 
-      // Kombiniere die Daten mit der ID
+      // Überspringe Posts ohne Slug oder Title
+      if (!slug || typeof data.title !== "string") return null;
+
       return {
         slug,
-        title: matterResult.data.title || '',
-        date: matterResult.data.date || '',
-        excerpt: matterResult.data.excerpt || '',
-        content: matterResult.content,
-        image: matterResult.data.image || '',
-        author: matterResult.data.author || '',
-        tags: matterResult.data.tags || [],
-      } as BlogPost;
-    });
-
-  // Sortiere Posts nach Datum
-  return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
-}
-
-export function getAllPostSlugs() {
-  if (!fs.existsSync(postsDirectory)) {
-    return [];
-  }
-
-  const fileNames = fs.readdirSync(postsDirectory);
-  return fileNames
-    .filter((fileName) => fileName.endsWith('.md'))
-    .map((fileName) => {
-      return {
-        params: {
-          slug: fileName.replace(/\.md$/, ''),
-        },
+        title: data.title ?? "Unbenannter Beitrag",
+        date: data.date ?? "1970-01-01",
+        excerpt: data.excerpt ?? "",
+        content,
+        image: data.image || defaultImage,
+        author: data.author ?? "Unbekannt",
+        tags: data.tags ?? [],
       };
-    });
+    })
+    .filter(Boolean) as BlogPost[];
+
+  return allPosts.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
+// Einzelnen Post abrufen + Markdown zu HTML parsen
 export async function getPostData(slug: string): Promise<BlogPost> {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
-  
+
   if (!fs.existsSync(fullPath)) {
-    throw new Error(`Post with slug "${slug}" not found`);
+    throw new Error(`Markdown-Datei für Slug '${slug}' nicht gefunden.`);
   }
 
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const { data, content } = matter(fileContents);
 
-  // Verwende gray-matter um die Metadaten zu parsen
-  const matterResult = matter(fileContents);
-
-  // Verwende remark um Markdown zu HTML zu konvertieren
-  const processedContent = await remark()
-    .use(html)
-    .process(matterResult.content);
+  const processedContent = await remark().use(html).process(content);
   const contentHtml = processedContent.toString();
 
-  // Kombiniere die Daten mit der ID und dem konvertierten HTML
   return {
     slug,
-    title: matterResult.data.title || '',
-    date: matterResult.data.date || '',
-    excerpt: matterResult.data.excerpt || '',
+    title: data.title ?? "Unbenannter Beitrag",
+    date: data.date ?? "1970-01-01",
+    excerpt: data.excerpt ?? "",
     content: contentHtml,
-    image: matterResult.data.image || '',
-    author: matterResult.data.author || '',
-    tags: matterResult.data.tags || [],
-  } as BlogPost;
-}
-
-export function getRecentPosts(limit: number = 3): BlogPost[] {
-  const allPosts = getSortedPostsData();
-  return allPosts.slice(0, limit);
-}
-
-export function getPostsByTag(tag: string): BlogPost[] {
-  const allPosts = getSortedPostsData();
-  return allPosts.filter(post => 
-    post.tags && post.tags.includes(tag)
-  );
+    image: data.image || defaultImage,
+    author: data.author ?? "Unbekannt",
+    tags: data.tags ?? [],
+  };
 }

@@ -1,10 +1,10 @@
 import { SiteConfig, HeroStats, ContactInfo, NavigationItem } from '@/types';
 
 export const siteConfig: SiteConfig = {
-  name: 'Freibad Schwimmbad',
-  description: 'Unterstützen Sie unser Freibad - Für eine lebendige Gemeinde und Freibadkultur',
-  url: 'https://freibad-schwimmbad.de',
-  ogImage: '/images/freibad-hero.jpg',
+  name: 'Freibad Niederkrüchten',
+  description: 'Unterstützen Sie unser Freibad - Für eine lebendige Gemeinde und Freibadkultur in Niederkrüchten',
+  url: 'https://rettet-das-freibad-niederkruechten.de',
+  ogImage: '/images/Freibad_Niederkrüchten_Bahnen_2017-scaled.jpg',
   links: {
     petition: 'https://www.openpetition.de/petition/freibad-schwimmbad',
     donation: '#spenden',
@@ -19,14 +19,14 @@ export const heroStats: HeroStats = {
 };
 
 export const contactInfo: ContactInfo = {
-  email: 'info@freibad-schwimmbad.de',
-  phone: '+49 123 456789',
-  address: 'Musterstraße 1, 12345 Musterstadt',
+  email: 'dirk.zilz@gmx.de',
+  phone: '+49 2163 49400',
+  address: 'Erkelenzer Str. 12, 41372 Niederkrüchten',
   bankDetails: {
     iban: 'DE12 3456 7890 1234 5678 90',
     bic: 'GENODEF1ABC',
     bank: 'Volksbank Musterstadt',
-    recipient: 'Förderverein Freibad Schwimmbad e.V.'
+    recipient: 'Freibad Niederkrüchten'
   }
 };
 
@@ -48,6 +48,10 @@ export const navigation: NavigationItem[] = [
     href: '/unterstuetzen'
   },
   {
+  label: 'Blog',
+  href: '/blog'
+  },
+  {
     label: 'Unser Freibad',
     href: '/unser-freibad',
     children: [
@@ -60,16 +64,8 @@ export const navigation: NavigationItem[] = [
         href: '/unser-freibad/chronik'
       },
       {
-        label: 'Presse',
-        href: '/unser-freibad/presse'
-      },
-      {
         label: 'Fakten & Zahlen',
         href: '/unser-freibad/fakten-zahlen'
-      },
-      {
-        label: 'Freibadkultur',
-        href: '/unser-freibad/freibadkultur'
       }
     ]
   }
