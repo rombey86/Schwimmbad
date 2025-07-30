@@ -19,7 +19,7 @@ export default function Footer() {
               <span className="text-xl font-bold">Rettet das Freibad Niederkrüchten</span>
             </Link>
             <p className="text-gray-300 mb-4 max-w-md">
-              Gemeinsam für unser in Niederkrüchten Freibad - Für eine lebendige Gemeinde und den Erhalt der Freibadkultur. 
+              Gemeinsam für unser Freibad in Niederkrüchten - 
               Unterstützen Sie uns bei der Rettung und Modernisierung unseres Freibads.
             </p>
             <div className="flex space-x-4">
