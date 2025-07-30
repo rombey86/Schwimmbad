@@ -30,44 +30,30 @@ export default function ImpressumPage() {
           <div className="prose prose-lg max-w-none">
             <h2>Angaben gemäß § 5 TMG</h2>
             <p>
-              <strong>Förderverein Freibad Schwimmbad e.V.</strong><br />
-              Musterstraße 1<br />
-              12345 Musterstadt<br />
+              <strong>Rettet das Freibad Niederkrüchten</strong><br />
+              Erkelenzer Straße 12<br />
+              41372 Niederkrüchten<br />
               Deutschland
             </p>
 
             <h2>Vertreten durch</h2>
             <p>
-              <strong>1. Vorsitzender:</strong> Max Mustermann<br />
-              <strong>2. Vorsitzende:</strong> Maria Musterfrau<br />
-              <strong>Kassenwart:</strong> Hans Beispiel
+              <strong>Dirk Zilz</strong>
             </p>
 
             <h2>Kontakt</h2>
             <p>
-              <strong>Telefon:</strong> +49 123 456789<br />
-              <strong>E-Mail:</strong> info@freibad-schwimmbad.de<br />
-              <strong>Website:</strong> www.freibad-schwimmbad.de
+              <strong>Telefon:</strong> +49 2163 49400<br />
+              <strong>E-Mail:</strong> dirk.zilz@gmx.de<br />
+              <strong>Website:</strong> https://www.rettet-das-freibad-niederkruechten.de/
             </p>
 
-            <h2>Registereintrag</h2>
-            <p>
-              <strong>Eintragung im Vereinsregister:</strong><br />
-              Registergericht: Amtsgericht Musterstadt<br />
-              Registernummer: VR 12345
-            </p>
-
-            <h2>Umsatzsteuer-ID</h2>
-            <p>
-              Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-              DE123456789
-            </p>
 
             <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
             <p>
-              Max Mustermann<br />
-              Musterstraße 1<br />
-              12345 Musterstadt
+              Dirk Zilz<br />
+              Erklenenzer Straße 12<br />
+              41372 Niederkrüchten
             </p>
 
             <h2>Streitschlichtung</h2>

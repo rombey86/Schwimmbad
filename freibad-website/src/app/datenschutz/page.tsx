@@ -32,11 +32,11 @@ export default function DatenschutzPage() {
             Verantwortlicher für die Datenverarbeitung auf dieser Website ist:
           </p>
           <p>
-            <strong>Förderverein Freibad Schwimmbad e.V.</strong><br />
-            Musterstraße 1<br />
-            12345 Musterstadt<br />
-            E-Mail: info@freibad-schwimmbad.de<br />
-            Telefon: +49 123 456789
+            <strong>Dirk Zilz</strong><br />
+            Erkelenzer Straße  12<br />
+            41372 Niederkrüchten<br />
+            E-Mail: dirk.zilz@gmx.de<br />
+            Telefon: +49 2163 49400
           </p>
 
           <h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
