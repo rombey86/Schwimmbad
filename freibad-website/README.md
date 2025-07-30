@@ -1,4 +1,4 @@
-# Freibad Schwimmbad Website
+# Freibad Niederkrüchten Website
 
 Eine vollständig statisch generierte Website (SSG) mit Next.js für das Freibad-Rettungsprojekt.
 
@@ -209,13 +209,10 @@ Dieses Projekt steht unter der MIT-Lizenz. Siehe `LICENSE` für Details.
 
 ## 📞 Kontakt
 
-**Förderverein Freibad Schwimmbad e.V.**
-- E-Mail: info@freibad-schwimmbad.de
-- Website: www.freibad-schwimmbad.de
-
+** Freibad Niederkrüchten**
 ---
 
-**Entwickelt mit ❤️ für unser Freibad**
+**Entwickelt mit ❤️ für unser Freibad in Niederkrüchten**
 
 
 SEO-Optimierung mit next/head implementieren

@@ -145,7 +145,7 @@ export default function Footer() {
               </Link>
             </div>
             <p className="text-gray-400 text-sm">
-              © {currentYear} Freibad Schwimmbad. Alle Rechte vorbehalten.
+              © {currentYear} Freibad Niederkrüchten. Alle Rechte vorbehalten.
             </p>
           </div>
         </div>
