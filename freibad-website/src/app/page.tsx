@@ -5,7 +5,7 @@ import { getSortedPostsData } from '@/lib/markdown';
 
 export const metadata: Metadata = {
   title: 'Startseite - Rettet das Freibad Niederkrüchten',
-  description: 'Offizielle Website für die Rettung das Freibads in – Informationen, Neuigkeiten und wie Sie uns unterstützen können.',
+  description: 'Offizielle Website für die Rettung des Freibad Niederkrüchten – Informationen, Neuigkeiten und wie Sie uns unterstützen können.',
 };
 
 export default function Home() {
