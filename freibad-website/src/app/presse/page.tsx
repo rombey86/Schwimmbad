@@ -3,27 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Metadata } from 'next';
-
-// This will be populated with actual newspaper articles
-const pressArticles = [
-  {
-    id: 1,
-    title: 'Beispiel Zeitungsartikel 1',
-    date: '2024-01-15',
-    source: 'Lokalzeitung',
-    filename: 'artikel-1.png',
-    description: 'Wichtige Neuigkeiten über das Freibad Niederkrüchten'
-  },
-  {
-    id: 2,
-    title: 'Beispiel Zeitungsartikel 2',
-    date: '2024-01-10',
-    source: 'Regionalzeitung',
-    filename: 'artikel-2.png',
-    description: 'Bericht über die Entwicklungen beim Bürgerentscheid'
-  }
-];
+import { pressArticles, getArticlesSortedByDate, PressArticle } from '@/data/press';
 
 export default function PressePage() {
   const [selectedArticle, setSelectedArticle] = useState<typeof pressArticles[0] | null>(null);
