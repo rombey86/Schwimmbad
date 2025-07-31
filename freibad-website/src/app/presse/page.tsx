@@ -100,13 +100,26 @@ export default function PressePage() {
               >
                 {/* Article Preview */}
                 <div className="aspect-[3/4] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center relative overflow-hidden">
-                  {/* Placeholder for newspaper article image */}
-                  <div className="text-center text-gray-500">
+                  <Image
+                    src={`/press/${article.filename}`}
+                    alt={article.title}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    onError={(e) => {
+                      // Fallback to placeholder if image doesn't exist
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      target.nextElementSibling?.classList.remove('hidden');
+                    }}
+                  />
+                  {/* Fallback placeholder */}
+                  <div className="hidden text-center text-gray-500 absolute inset-0 flex items-center justify-center flex-col">
                     <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clipRule="evenodd" />
                       <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-1v3a2 2 0 11-4 0V7.5A1.5 1.5 0 0110.5 6H15v1z" />
                     </svg>
-                    <p className="text-sm">Artikel wird geladen...</p>
+                    <p className="text-sm">Bild nicht gefunden</p>
                     <p className="text-xs mt-1">{article.filename}</p>
                   </div>
                   
