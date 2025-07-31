@@ -1,9 +1,9 @@
 import fs from 'fs';
 import path from 'path';
-import { siteConfig } from './src/data/config.js'; // .js extension needed for ES modules
+
 
 async function generateSitemap() {
-  const baseUrl = siteConfig.baseUrl;
+  const baseUrl = "https://www.rettet-das-freibad-niederkruechten.de/";
   const staticRoutes = [
     {
       url: baseUrl,
