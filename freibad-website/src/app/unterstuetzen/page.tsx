@@ -143,8 +143,92 @@ export default function UnterstuetzenPage() {
         </div>
       </section>
 
-      {/* Spenden-Details */}
+      {/* Bürgerbegehren Status */}
       <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Aktuelle Situation der Bürgerbegehren
+              </h2>
+              <p className="text-xl text-gray-600">
+                Warum wir Ihre finanzielle Unterstützung benötigen
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-yellow-800 mb-3">Liebe Freibadunterstützer,</h3>
+                <p className="text-yellow-700 mb-4">
+                  Das erste Bürgerbegehren zum Erhalt unseres Freibades soll laut Verwaltung vom Rat basierend auf
+                  „Gutachten" einer Anwaltskanzlei aus Köln für unzulässig erklärt werden. Die absichernden
+                  Bürgerbegehren 2 und 3 starten ab sofort mit der Unterschriftensammlung.
+                </p>
+                <p className="text-yellow-700">
+                  Wir arbeiten intensiv daran, zumindest eines dieser Bürgerbegehren zum Erfolg zu führen. Das ist
+                  mit viel Zeit und Arbeit, aber auch mit erheblichem finanziellem Aufwand verbunden.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-red-50 border border-red-200 rounded-lg p-6">
+                  <h3 className="text-lg font-semibold text-red-800 mb-3">Bereits investiert</h3>
+                  <div className="text-3xl font-bold text-red-600 mb-2">7.000+ €</div>
+                  <p className="text-red-700 text-sm">
+                    Für das frühere erste Bürgerbegehren „Start Freibadsanierung" wurden über 7000 € in
+                    Informationsmaterial, Unterschriftenlisten und Anwaltskosten investiert.
+                  </p>
+                </div>
+
+                <div className="bg-orange-50 border border-orange-200 rounded-lg p-6">
+                  <h3 className="text-lg font-semibold text-orange-800 mb-3">Erwartete Kosten</h3>
+                  <div className="text-3xl font-bold text-orange-600 mb-2">mehrere 1000 €</div>
+                  <p className="text-orange-700 text-sm">
+                    Wir rechnen derzeit mit weiteren Kosten in Höhe von mehreren tausend Euro hauptsächlich
+                    für weitere juristische Begleitung durch unseren Fachanwalt bei den nun insgesamt drei Bürgerbegehren.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-blue-800 mb-3">Kostenaufschlüsselung</h3>
+                <ul className="text-blue-700 space-y-2">
+                  <li className="flex items-center">
+                    <svg className="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Werbungs- und Umsetzungskosten
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Juristische Begleitung des Verfahrens
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Klage vor dem Verwaltungsgericht Düsseldorf
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-800 mb-3">Verwendung von Überschüssen</h3>
+                <p className="text-green-700">
+                  Mögliche Überschüsse nach Abschluss des Bürgerbegehrens verbleiben komplett beim
+                  „Förderverein Niederkrüchtener Bäder e.V.". So kann diese Unterstützung, wenn einer der
+                  Bürgerentscheide es verlangt, direkt in das Freibad investiert werden.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Spenden-Details */}
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-xl shadow-lg p-8">
             <div className="text-center mb-8">
