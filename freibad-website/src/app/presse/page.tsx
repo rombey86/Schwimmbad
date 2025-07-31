@@ -6,10 +6,13 @@ import Image from 'next/image';
 import { pressArticles, getArticlesSortedByDate, PressArticle } from '@/data/press';
 
 export default function PressePage() {
-  const [selectedArticle, setSelectedArticle] = useState<typeof pressArticles[0] | null>(null);
+  const [selectedArticle, setSelectedArticle] = useState<PressArticle | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = (article: typeof pressArticles[0]) => {
+  // Get articles sorted by date (newest first)
+  const sortedArticles = getArticlesSortedByDate();
+
+  const openModal = (article: PressArticle) => {
     setSelectedArticle(article);
     setIsModalOpen(true);
     document.body.style.overflow = 'hidden';
@@ -72,7 +75,7 @@ export default function PressePage() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Zeitungsartikel hinzufügen</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>Anleitung für Administrator:</strong> Laden Sie PNG-Dateien von Zeitungsartikeln in den Ordner 
+                  <strong>Anleitung f��r Administrator:</strong> Laden Sie PNG-Dateien von Zeitungsartikeln in den Ordner 
                   <code className="bg-gray-100 px-2 py-1 rounded mx-1 text-sm">/public/press/</code> 
                   hoch. Die Dateien sollten im Format <code className="bg-gray-100 px-2 py-1 rounded mx-1 text-sm">artikel-name.png</code> benannt werden. 
                   Anschließend bearbeiten Sie die Datei 
