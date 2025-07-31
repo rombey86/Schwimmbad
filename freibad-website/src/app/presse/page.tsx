@@ -1,11 +1,14 @@
-'use client';
+import { Metadata } from 'next';
+import PressPageClient from './PressPageClient';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { pressArticles, getArticlesSortedByDate, PressArticle } from '@/data/press';
+export const metadata: Metadata = {
+  title: 'Presse - Rettet das Freibad Niederkrüchten',
+  description: 'Aktuelle Presseberichte und Medienecho zum Freibad Niederkrüchten. Verfolgen Sie die Berichterstattung über unser Projekt.',
+};
 
-export { metadata } from './metadata';
+export default function PressePage() {
+  return <PressPageClient />;
+}
 
 export default function PressePage() {
   const [selectedArticle, setSelectedArticle] = useState<PressArticle | null>(null);
