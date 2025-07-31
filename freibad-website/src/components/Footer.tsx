@@ -8,19 +8,19 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-{/* Logo */}
-<Link href="/" className="flex items-center space-x-2">
-  {/* Bild-Logo */}
-  <div className="w-8 h-8 relative">
-    <Image
-      src="/images/I-Love-Freibad-Niederkruechten-150px.png"
-      alt="Logo Rettet das Freibad Niederkrüchten"
-      fill
-      style={{ objectFit: "contain" }}
-      sizes="32px"
-      priority
-    />
-  </div>
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-2">
+            {/* Bild-Logo */}
+            <div className="w-8 h-8 relative">
+              <Image
+                src="/images/I-Love-Freibad-Niederkruechten-150px.png"
+                alt="Logo Rettet das Freibad Niederkrüchten"
+                fill
+                style={{ objectFit: "contain" }}
+                sizes="32px"
+                priority
+              />
+            </div>
 
   {/* Text */}
   <span className="text-xl font-bold text-gray-900">Rettet das Freibad Niederkrüchten</span>
