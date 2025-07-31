@@ -8,25 +8,18 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            {/* Bild-Logo */}
-            <div className="w-8 h-8 relative">
-              <Image
-                src="/images/I-Love-Freibad-Niederkruechten-150px.png"
-                alt="Logo Rettet das Freibad Niederkrüchten"
-                fill
-                style={{ objectFit: "contain" }}
-                sizes="32px"
-                priority
-              />
-            </div>
-
-  {/* Text */}
-  <span className="text-xl font-bold text-gray-900">Rettet das Freibad Niederkrüchten</span>
-</Link>
+          {/* Logo und Beschreibung */}
+          <div className="lg:col-span-2">
+            <Link href="/" className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732L14.146 12.8l-1.179 4.456a1 1 0 01-1.934 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732L9.854 7.2l1.179-4.456A1 1 0 0112 2z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <span className="text-xl font-bold">Rettet das Freibad Niederkrüchten</span>
+            </Link>
             <p className="text-gray-300 mb-4 max-w-md">
-              Gemeinsam für unser Freibad in Niederkrüchten - 
+              Gemeinsam für unser Freibad in Niederkrüchten -
               Unterstützen Sie uns bei der Rettung und Modernisierung unseres Freibads.
             </p>
             <div className="flex space-x-4">
@@ -104,7 +97,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Kontakt</h3>
             <div className="space-y-2 text-gray-300">
               <p>
-                <a 
+                <a
                   href={`mailto:${contactInfo.email}`}
                   className="hover:text-white transition-colors duration-200"
                 >
@@ -113,7 +106,7 @@ export default function Footer() {
               </p>
               {contactInfo.phone && (
                 <p>
-                  <a 
+                  <a
                     href={`tel:${contactInfo.phone}`}
                     className="hover:text-white transition-colors duration-200"
                   >
@@ -132,19 +125,19 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-wrap items-center space-x-6 mb-4 md:mb-0">
-              <Link 
+              <Link
                 href="/impressum"
                 className="text-gray-400 hover:text-white transition-colors duration-200 text-base"
               >
                 Impressum
               </Link>
-              <Link 
+              <Link
                 href="/datenschutz"
                 className="text-gray-400 hover:text-white transition-colors duration-200 text-base"
               >
                 Datenschutz
               </Link>
-              <Link 
+              <Link
                 href="/sitemap"
                 className="text-gray-400 hover:text-white transition-colors duration-200 text-base"
               >
