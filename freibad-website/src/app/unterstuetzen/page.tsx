@@ -248,20 +248,20 @@ export default function UnterstuetzenPage() {
                 </h3>
                 <div className="bg-gray-50 rounded-lg p-6 space-y-3">
                   <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
-                    <span className="text-gray-600">Empfänger:</span>
-                    <span className="font-medium text-right">{contactInfo.bankDetails.recipient}</span>
+                    <span className="text-gray-700">Empfänger:</span>
+                    <span className="font-medium text-right text-black">{contactInfo.bankDetails.recipient}</span>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
-                    <span className="text-gray-600">Stichwort:</span>
-                    <span className="font-medium">"{contactInfo.bankDetails.subject}"</span>
+                    <span className="text-gray-700">Stichwort:</span>
+                    <span className="font-medium text-black">"{contactInfo.bankDetails.subject}"</span>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
-                    <span className="text-gray-600">IBAN:</span>
-                    <span className="font-mono text-sm">{contactInfo.bankDetails.iban}</span>
+                    <span className="text-gray-700">IBAN:</span>
+                    <span className="font-mono text-sm text-black">{contactInfo.bankDetails.iban}</span>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
-                    <span className="text-gray-600">BIC:</span>
-                    <span className="font-mono text-sm">{contactInfo.bankDetails.bic} {contactInfo.bankDetails.bank}</span>
+                    <span className="text-gray-700">BIC:</span>
+                    <span className="font-mono text-sm text-black">{contactInfo.bankDetails.bic} {contactInfo.bankDetails.bank}</span>
                   </div>
                 </div>
                 
