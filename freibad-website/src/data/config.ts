@@ -52,6 +52,10 @@ export const navigation: NavigationItem[] = [
   href: '/blog'
   },
   {
+    label: 'Presse',
+    href: '/presse'
+  },
+  {
     label: 'Unser Freibad',
     href: '/unser-freibad',
     children: [
