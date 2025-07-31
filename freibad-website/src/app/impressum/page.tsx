@@ -26,7 +26,6 @@ export default function ImpressumPage() {
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white rounded-xl shadow-lg border border-gray-200">
-
           <div className="p-8 space-y-8">
             {/* Kontakt */}
             <section className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600">
@@ -55,7 +54,7 @@ export default function ImpressumPage() {
 
             {/* Petitionsteam */}
             <section className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-              <h2 className="text-lg font-bold text-gray-900 mb-4">Das Petitionsteam „Rettet das Freibad Niederkrüchten" besteht aus:</h2>
+              <h2 className="text-lg font-bold text-gray-900 mb-4">Das Petitionsteam „Rettet das Freibad Niederkrüchten/quot; besteht aus:</h2>
               <div className="text-gray-800 space-y-2 ml-4">
                 <div>• Maik Faßbender, Niederkrüchten</div>
                 <div>• Hans-Leo van Gansewinkel, Niederkrüchten</div>
@@ -97,7 +96,7 @@ export default function ImpressumPage() {
                 <div className="border-b border-gray-200 pb-4">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">§ 2 Externe Links</h3>
                   <p className="text-gray-800 leading-relaxed ml-4">
-                    Diese Website enthält Verknüpfungen zu Websites Dritter („externe Links"). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.
+                    Diese Website enthält Verknüpfungen zu Websites Dritter (externe Links). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.
                   </p>
                 </div>
 
