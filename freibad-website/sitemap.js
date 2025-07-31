@@ -3,7 +3,7 @@ import path from 'path';
 import { siteConfig } from './src/data/config.js'; // .js extension needed for ES modules
 
 async function generateSitemap() {
-  const baseUrl = siteConfig.url;
+  const baseUrl = siteConfig.baseUrl;
   const staticRoutes = [
     {
       url: baseUrl,
