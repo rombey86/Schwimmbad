@@ -25,101 +25,107 @@ export default function ImpressumPage() {
 
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white rounded-xl shadow-sm p-8">
-          
-          <div className="prose prose-lg max-w-none">
-            <h2>Angaben gemäß § 5 TMG</h2>
-            <p>
-              <strong>Rettet das Freibad Niederkrüchten</strong><br />
-              Erkelenzer Straße 12<br />
-              41372 Niederkrüchten<br />
-              Deutschland
-            </p>
+        <div className="bg-white rounded-xl shadow-lg border border-gray-200">
 
-            <h2>Vertreten durch</h2>
-            <p>
-              <strong>Dirk Zilz</strong>
-            </p>
+          <div className="p-8 space-y-8">
+            {/* Kontakt */}
+            <section className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600">
+              <div className="text-lg font-bold text-gray-900 mb-4">Impressum</div>
+              <div className="text-gray-800 space-y-2">
+                <div className="font-semibold text-gray-900">Dirk Zilz</div>
+                <div>Erkelenzer Str. 12</div>
+                <div>41372 Niederkrüchten</div>
+              </div>
 
-            <h2>Kontakt</h2>
-            <p>
-              <strong>Telefon:</strong> +49 2163 49400<br />
-              <strong>E-Mail:</strong> dirk.zilz@gmx.de<br />
-              <strong>Website:</strong> https://www.rettet-das-freibad-niederkruechten.de/
-            </p>
+              <div className="mt-4 text-gray-800 space-y-1">
+                <div><span className="font-semibold">Telefon:</span> 02163/49400</div>
+                <div><span className="font-semibold">E-Mail:</span> dirk.zilz@gmx.de</div>
+              </div>
+            </section>
 
+            {/* Verantwortlich */}
+            <section className="bg-gray-50 p-6 rounded-lg border-l-4 border-green-600">
+              <h2 className="text-lg font-bold text-gray-900 mb-4">Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV):</h2>
+              <div className="text-gray-800 space-y-1 ml-4">
+                <div className="font-semibold">Dirk Zilz</div>
+                <div>Erkelenzer Str. 12</div>
+                <div>41372 Niederkrüchten</div>
+              </div>
+            </section>
 
-            <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-            <p>
-              Dirk Zilz<br />
-              Erklenenzer Straße 12<br />
-              41372 Niederkrüchten
-            </p>
+            {/* Petitionsteam */}
+            <section className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+              <h2 className="text-lg font-bold text-gray-900 mb-4">Das Petitionsteam „Rettet das Freibad Niederkrüchten" besteht aus:</h2>
+              <div className="text-gray-800 space-y-2 ml-4">
+                <div>• Maik Faßbender, Niederkrüchten</div>
+                <div>• Hans-Leo van Gansewinkel, Niederkrüchten</div>
+                <div>• Markus Heinrichs, Niederkrüchten</div>
+                <div>• Astrid Symansky-Pape, Niederkrüchten</div>
+                <div>• Michael Willemse, Niederkrüchten</div>
+                <div>• Susanne Zilz-Rombey, Niederkrüchten</div>
+              </div>
+            </section>
 
-            <h2>Streitschlichtung</h2>
-            <p>
-              Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
-              <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                https://ec.europa.eu/consumers/odr/
-              </a>
-            </p>
-            <p>
-              Unsere E-Mail-Adresse finden Sie oben im Impressum. Wir sind nicht bereit oder verpflichtet, 
-              an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
-            </p>
+            {/* Bürgerbegehren Team */}
+            <section className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+              <h2 className="text-lg font-bold text-gray-900 mb-4">Das Team Bürgerbegehren besteht aus:</h2>
+              <div className="text-gray-800 space-y-2 ml-4">
+                <div>• Justyna Sieben, Niederkrüchten-Elmpt <span className="text-sm text-gray-600">(Initiatorin)</span></div>
+                <div>• Guido Buschhüter, Niederkrüchten <span className="text-sm text-gray-600">(Initiator)</span></div>
+                <div>• Dr. med. Björn-Casten Schultheis, Niederkrüchten <span className="text-sm text-gray-600">(Initiator)</span></div>
+                <div>• Klaus-Robert Vosdellen, Niederkrüchten <span className="text-sm text-gray-600">(Initiator)</span></div>
+                <div>• David Steffens, Niederkrüchten-Gützenrath <span className="text-sm text-gray-600">(Initiator)</span></div>
+                <div>• Dirk Zilz, Niederkrüchten</div>
+                <div>• Maik Faßbender, Niederkrüchten-Dam</div>
+                <div>• Markus Heinrichs, Niederkrüchten</div>
+                <div>• Susanne Zilz-Rombey, Niederkrüchten</div>
+              </div>
+            </section>
 
-            <h2>Haftung für Inhalte</h2>
-            <p>
-              Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den 
-              allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht 
-              unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach 
-              Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
-            </p>
-            <p>
-              Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen 
-              Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt 
-              der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden 
-              Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
-            </p>
+            {/* Rechtliche Hinweise */}
+            <section className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+              <h2 className="text-xl font-bold text-gray-900 mb-6">Disclaimer – rechtliche Hinweise</h2>
 
-            <h2>Haftung für Links</h2>
-            <p>
-              Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. 
-              Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der 
-              verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. 
-              Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. 
-              Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
-            </p>
-            <p>
-              Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte 
-              einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige 
-              Links umgehend entfernen.
-            </p>
+              <div className="space-y-6">
+                <div className="border-b border-gray-200 pb-4">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">§ 1 Warnhinweis zu Inhalten</h3>
+                  <p className="text-gray-800 leading-relaxed ml-4">
+                    Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters.
+                  </p>
+                </div>
 
-            <h2>Urheberrecht</h2>
-            <p>
-              Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen 
-              Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der 
-              Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. 
-              Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
-            </p>
-            <p>
-              Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte 
-              Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem 
-              auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. 
-              Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
-            </p>
+                <div className="border-b border-gray-200 pb-4">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">§ 2 Externe Links</h3>
+                  <p className="text-gray-800 leading-relaxed ml-4">
+                    Diese Website enthält Verknüpfungen zu Websites Dritter („externe Links"). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.
+                  </p>
+                </div>
 
-            <h2>Bildnachweise</h2>
-            <p>
-              Die auf dieser Website verwendeten Bilder stammen aus eigenen Aufnahmen des Freibads oder sind 
-              lizenzfrei. Sollten dennoch Urheberrechte verletzt worden sein, bitten wir um entsprechende 
-              Mitteilung, damit wir die entsprechenden Bilder entfernen können.
-            </p>
+                <div className="border-b border-gray-200 pb-4">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">§ 3 Urheber- und Leistungsschutzrechte</h3>
+                  <div className="text-gray-800 leading-relaxed ml-4 space-y-3">
+                    <p>
+                      Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt.
+                    </p>
+                    <p>
+                      Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.
+                    </p>
+                  </div>
+                </div>
 
-            <div className="mt-12 pt-8 border-t border-gray-200">
-              <p className="text-sm text-gray-500">
-                <strong>Stand:</strong> Januar 2024
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">§ 4 Besondere Nutzungsbedingungen</h3>
+                  <p className="text-gray-800 leading-relaxed ml-4">
+                    Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Paragraphen abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Quelle */}
+            <div className="text-center pt-6 border-t border-gray-200">
+              <p className="text-sm text-gray-600">
+                <span className="font-semibold">Quelle:</span> Impressum Muster von JuraForum.de
               </p>
             </div>
           </div>

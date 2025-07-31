@@ -61,5 +61,6 @@ export interface ContactInfo {
     bic: string;
     bank: string;
     recipient: string;
+    subject: string;
   };
 }
