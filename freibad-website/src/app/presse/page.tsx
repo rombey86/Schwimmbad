@@ -194,13 +194,27 @@ export default function PressePage() {
             {/* Article */}
             <div className="bg-white rounded-lg overflow-hidden shadow-2xl max-h-[90vh] overflow-y-auto">
               {/* Article Image */}
-              <div className="aspect-[3/4] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                <div className="text-center text-gray-500">
+              <div className="aspect-[3/4] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center relative">
+                <Image
+                  src={`/press/${selectedArticle.filename}`}
+                  alt={selectedArticle.title}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 80vw"
+                  onError={(e) => {
+                    // Fallback to placeholder if image doesn't exist
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    target.nextElementSibling?.classList.remove('hidden');
+                  }}
+                />
+                {/* Fallback placeholder */}
+                <div className="hidden text-center text-gray-500 absolute inset-0 flex items-center justify-center flex-col">
                   <svg className="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clipRule="evenodd" />
                     <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-1v3a2 2 0 11-4 0V7.5A1.5 1.5 0 0110.5 6H15v1z" />
                   </svg>
-                  <p>Zeitungsartikel wird geladen...</p>
+                  <p>Bild nicht gefunden</p>
                   <p className="text-sm mt-2">{selectedArticle.filename}</p>
                 </div>
               </div>
