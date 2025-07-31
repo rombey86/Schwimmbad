@@ -5,6 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { pressArticles, getArticlesSortedByDate, PressArticle } from '@/data/press';
 
+export { metadata } from './metadata';
+
 export default function PressePage() {
   const [selectedArticle, setSelectedArticle] = useState<PressArticle | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
