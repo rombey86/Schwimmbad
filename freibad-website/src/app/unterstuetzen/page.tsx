@@ -161,7 +161,7 @@ export default function UnterstuetzenPage() {
                 <h3 className="text-lg font-semibold text-yellow-800 mb-3">Liebe Freibadunterstützer,</h3>
                 <p className="text-yellow-700 mb-4">
                   Das erste Bürgerbegehren zum Erhalt unseres Freibades soll laut Verwaltung vom Rat basierend auf
-                  „Gutachten" einer Anwaltskanzlei aus Köln für unzulässig erklärt werden. Die absichernden
+                  „Gutachten&quot; einer Anwaltskanzlei aus Köln für unzulässig erklärt werden. Die absichernden
                   Bürgerbegehren 2 und 3 starten ab sofort mit der Unterschriftensammlung.
                 </p>
                 <p className="text-yellow-700">
@@ -175,7 +175,7 @@ export default function UnterstuetzenPage() {
                   <h3 className="text-lg font-semibold text-red-800 mb-3">Bereits investiert</h3>
                   <div className="text-3xl font-bold text-red-600 mb-2">7.000+ €</div>
                   <p className="text-red-700 text-sm">
-                    Für das frühere erste Bürgerbegehren „Start Freibadsanierung" wurden über 7000 € in
+                    Für das frühere erste Bürgerbegehren „Start Freibadsanierung&quot; wurden über 7000 € in
                     Informationsmaterial, Unterschriftenlisten und Anwaltskosten investiert.
                   </p>
                 </div>
@@ -218,7 +218,7 @@ export default function UnterstuetzenPage() {
                 <h3 className="text-lg font-semibold text-green-800 mb-3">Verwendung von Überschüssen</h3>
                 <p className="text-green-700">
                   Mögliche Überschüsse nach Abschluss des Bürgerbegehrens verbleiben komplett beim
-                  „Förderverein Niederkrüchtener Bäder e.V.". So kann diese Unterstützung, wenn einer der
+                  „Förderverein Niederkrüchtener Bäder e.V.&quot;. So kann diese Unterstützung, wenn einer der
                   Bürgerentscheide es verlangt, direkt in das Freibad investiert werden.
                 </p>
               </div>
@@ -253,7 +253,7 @@ export default function UnterstuetzenPage() {
                   </div>
                   <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
                     <span className="text-gray-700">Stichwort:</span>
-                    <span className="font-medium text-black">"{contactInfo.bankDetails.subject}"</span>
+                    <span className="font-medium text-black">&quot;{contactInfo.bankDetails.subject}&quot;</span>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
                     <span className="text-gray-700">IBAN:</span>
