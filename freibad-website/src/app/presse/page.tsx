@@ -75,7 +75,7 @@ export default function PressePage() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Zeitungsartikel hinzufügen</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>Anleitung f��r Administrator:</strong> Laden Sie PNG-Dateien von Zeitungsartikeln in den Ordner 
+                  <strong>Anleitung für Administrator:</strong> Laden Sie PNG-Dateien von Zeitungsartikeln in den Ordner 
                   <code className="bg-gray-100 px-2 py-1 rounded mx-1 text-sm">/public/press/</code> 
                   hoch. Die Dateien sollten im Format <code className="bg-gray-100 px-2 py-1 rounded mx-1 text-sm">artikel-name.png</code> benannt werden. 
                   Anschließend bearbeiten Sie die Datei 
@@ -92,7 +92,7 @@ export default function PressePage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {pressArticles.map((article) => (
+            {sortedArticles.map((article) => (
               <div
                 key={article.id}
                 className="group cursor-pointer bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:scale-105"
