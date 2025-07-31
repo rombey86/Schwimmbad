@@ -281,19 +281,18 @@ export default function UnterstuetzenPage() {
                 </div>
               </div>
 
-              {/* QR-Code Placeholder */}
+              {/* QR-Code */}
               <div className="text-center">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                  QR-Code für mobile Spende
+                  SEPA-QR-Code für mobile Spende
                 </h3>
                 <div className="bg-gray-100 rounded-lg p-8 mb-4 flex items-center justify-center">
                   <div className="w-48 h-48 bg-white rounded-lg shadow-inner flex items-center justify-center">
-                    <div className="text-center">
-                      <svg className="w-16 h-16 text-gray-400 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M3 4a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm2 2V5h1v1H5zM3 13a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1v-3zm2 2v-1h1v1H5zM13 3a1 1 0 00-1 1v3a1 1 0 001 1h3a1 1 0 001-1V4a1 1 0 00-1-1h-3zm1 2v1h1V5h-1z" clipRule="evenodd" />
-                      </svg>
-                      <p className="text-sm text-gray-500">QR-Code</p>
-                    </div>
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F8421b3ac5f9145bcb19836cc73bc59c8%2Ffd6ec44290db46be87a8616753ccf1ca?format=webp&width=800"
+                      alt="SEPA QR-Code für Spenden"
+                      className="w-44 h-44 object-contain"
+                    />
                   </div>
                 </div>
                 <p className="text-sm text-gray-600 mb-4">
