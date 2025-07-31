@@ -54,7 +54,7 @@ export default function ImpressumPage() {
 
             {/* Petitionsteam */}
             <section className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-              <h2 className="text-lg font-bold text-gray-900 mb-4">Das Petitionsteam „Rettet das Freibad Niederkrüchten/quot; besteht aus:</h2>
+              <h2 className="text-lg font-bold text-gray-900 mb-4">Das Petitionsteam „Rettet das Freibad Niederkrüchten&quot; besteht aus:</h2>
               <div className="text-gray-800 space-y-2 ml-4">
                 <div>• Maik Faßbender, Niederkrüchten</div>
                 <div>• Hans-Leo van Gansewinkel, Niederkrüchten</div>
