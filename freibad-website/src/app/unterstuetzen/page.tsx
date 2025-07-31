@@ -23,8 +23,8 @@ export default function UnterstuetzenPage() {
               Unterstützen Sie unser Freibad
             </h1>
             <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto">
-              Gemeinsam können wir unser Freibad retten und für zukünftige Generationen erhalten. 
-              Jede Unterstützung zählt!
+              Das Bürgerbegehren kostet viel Zeit, Arbeit und Geld.
+              Ihre finanzielle Unterstützung hilft bei Anwaltskosten und weiteren Verfahren.
             </p>
           </div>
         </div>
@@ -143,16 +143,100 @@ export default function UnterstuetzenPage() {
         </div>
       </section>
 
-      {/* Spenden-Details */}
+      {/* Bürgerbegehren Status */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-xl shadow-lg p-8">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Spenden für unser Freibad
+                Aktuelle Situation der Bürgerbegehren
               </h2>
               <p className="text-xl text-gray-600">
-                Ihre Spende kommt zu 100% unserem Freibad-Projekt zugute
+                Warum wir Ihre finanzielle Unterstützung benötigen
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-yellow-800 mb-3">Liebe Freibadunterstützer,</h3>
+                <p className="text-yellow-700 mb-4">
+                  Das erste Bürgerbegehren zum Erhalt unseres Freibades soll laut Verwaltung vom Rat basierend auf
+                  „Gutachten" einer Anwaltskanzlei aus Köln für unzulässig erklärt werden. Die absichernden
+                  Bürgerbegehren 2 und 3 starten ab sofort mit der Unterschriftensammlung.
+                </p>
+                <p className="text-yellow-700">
+                  Wir arbeiten intensiv daran, zumindest eines dieser Bürgerbegehren zum Erfolg zu führen. Das ist
+                  mit viel Zeit und Arbeit, aber auch mit erheblichem finanziellem Aufwand verbunden.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-red-50 border border-red-200 rounded-lg p-6">
+                  <h3 className="text-lg font-semibold text-red-800 mb-3">Bereits investiert</h3>
+                  <div className="text-3xl font-bold text-red-600 mb-2">7.000+ €</div>
+                  <p className="text-red-700 text-sm">
+                    Für das frühere erste Bürgerbegehren „Start Freibadsanierung" wurden über 7000 € in
+                    Informationsmaterial, Unterschriftenlisten und Anwaltskosten investiert.
+                  </p>
+                </div>
+
+                <div className="bg-orange-50 border border-orange-200 rounded-lg p-6">
+                  <h3 className="text-lg font-semibold text-orange-800 mb-3">Erwartete Kosten</h3>
+                  <div className="text-3xl font-bold text-orange-600 mb-2">mehrere 1000 €</div>
+                  <p className="text-orange-700 text-sm">
+                    Wir rechnen derzeit mit weiteren Kosten in Höhe von mehreren tausend Euro hauptsächlich
+                    für weitere juristische Begleitung durch unseren Fachanwalt bei den nun insgesamt drei Bürgerbegehren.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-blue-800 mb-3">Kostenaufschlüsselung</h3>
+                <ul className="text-blue-700 space-y-2">
+                  <li className="flex items-center">
+                    <svg className="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Werbungs- und Umsetzungskosten
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Juristische Begleitung des Verfahrens
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Klage vor dem Verwaltungsgericht Düsseldorf
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-green-800 mb-3">Verwendung von Überschüssen</h3>
+                <p className="text-green-700">
+                  Mögliche Überschüsse nach Abschluss des Bürgerbegehrens verbleiben komplett beim
+                  „Förderverein Niederkrüchtener Bäder e.V.". So kann diese Unterstützung, wenn einer der
+                  Bürgerentscheide es verlangt, direkt in das Freibad investiert werden.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Spenden-Details */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Spenden für das Bürgerbegehren
+              </h2>
+              <p className="text-xl text-gray-600">
+                Ihre Spende unterstützt die juristische Begleitung und weitere Kosten des Bürgerbegehrens
               </p>
             </div>
 
@@ -163,21 +247,21 @@ export default function UnterstuetzenPage() {
                   Bankverbindung
                 </h3>
                 <div className="bg-gray-50 rounded-lg p-6 space-y-3">
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Empfänger:</span>
-                    <span className="font-medium text-right">{contactInfo.bankDetails.recipient}</span>
+                  <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
+                    <span className="text-gray-700">Empfänger:</span>
+                    <span className="font-medium text-right text-black">{contactInfo.bankDetails.recipient}</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Bank:</span>
-                    <span className="font-medium">{contactInfo.bankDetails.bank}</span>
+                  <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
+                    <span className="text-gray-700">Stichwort:</span>
+                    <span className="font-medium text-black">"{contactInfo.bankDetails.subject}"</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">IBAN:</span>
-                    <span className="font-mono text-sm">{contactInfo.bankDetails.iban}</span>
+                  <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
+                    <span className="text-gray-700">IBAN:</span>
+                    <span className="font-mono text-sm text-black">{contactInfo.bankDetails.iban}</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">BIC:</span>
-                    <span className="font-mono text-sm">{contactInfo.bankDetails.bic}</span>
+                  <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
+                    <span className="text-gray-700">BIC:</span>
+                    <span className="font-mono text-sm text-black">{contactInfo.bankDetails.bic} {contactInfo.bankDetails.bank}</span>
                   </div>
                 </div>
                 
@@ -187,34 +271,40 @@ export default function UnterstuetzenPage() {
                       <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                     </svg>
                     <div>
-                      <p className="text-sm text-blue-800 font-medium">Spendenquittung</p>
+                      <p className="text-sm text-blue-800 font-medium">Steuerlich absetzbar</p>
                       <p className="text-sm text-blue-700">
-                        Geben Sie bei Spenden über 25€ Ihre Adresse im Verwendungszweck an, 
-                        um eine Spendenquittung zu erhalten.
+                        Bis 200 EUR reicht der Kontoauszug. Ab 200 EUR erhalten Sie bis Ende Januar
+                        eine Spendenquittung. Bitte Adresse im Verwendungszweck angeben.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* QR-Code Placeholder */}
+              {/* QR-Code */}
               <div className="text-center">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                  QR-Code für mobile Spende
+                  SEPA-QR-Code für mobile Spende
                 </h3>
                 <div className="bg-gray-100 rounded-lg p-8 mb-4 flex items-center justify-center">
                   <div className="w-48 h-48 bg-white rounded-lg shadow-inner flex items-center justify-center">
-                    <div className="text-center">
-                      <svg className="w-16 h-16 text-gray-400 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M3 4a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm2 2V5h1v1H5zM3 13a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1v-3zm2 2v-1h1v1H5zM13 3a1 1 0 00-1 1v3a1 1 0 001 1h3a1 1 0 001-1V4a1 1 0 00-1-1h-3zm1 2v1h1V5h-1z" clipRule="evenodd" />
-                      </svg>
-                      <p className="text-sm text-gray-500">QR-Code</p>
-                    </div>
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F8421b3ac5f9145bcb19836cc73bc59c8%2Ffd6ec44290db46be87a8616753ccf1ca?format=webp&width=800"
+                      alt="SEPA QR-Code für Spenden"
+                      className="w-44 h-44 object-contain"
+                    />
                   </div>
                 </div>
-                <p className="text-sm text-gray-600">
-                  Scannen Sie den QR-Code mit Ihrer Banking-App für eine schnelle Überweisung
+                <p className="text-sm text-gray-600 mb-4">
+                  Scannen Sie den SEPA-Code mit Ihrer Banking-App und geben Sie den gewünschten Betrag ein
                 </p>
+                <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+                  <div className="text-center">
+                    <p className="text-sm font-medium text-green-800 mb-1">Bereits eingegangene Spenden:</p>
+                    <p className="text-2xl font-bold text-green-600">7.410,26 €</p>
+                    <p className="text-xs text-green-600">Stand: 06.03.2022</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -23,10 +23,11 @@ export const contactInfo: ContactInfo = {
   phone: '+49 2163 49400',
   address: 'Erkelenzer Str. 12, 41372 Niederkrüchten',
   bankDetails: {
-    iban: 'DE12 3456 7890 1234 5678 90',
-    bic: 'GENODEF1ABC',
-    bank: 'Volksbank Musterstadt',
-    recipient: 'Freibad Niederkrüchten'
+    iban: 'DE95 3146 0290 2021 6270 14',
+    bic: 'GENODED1VSN',
+    bank: 'Volksbank Viersen e.G',
+    recipient: 'Förderverein Niederkrüchtener Bäder e.V.',
+    subject: 'Bürgerbegehren'
   }
 };
 
@@ -50,6 +51,10 @@ export const navigation: NavigationItem[] = [
   {
   label: 'Blog',
   href: '/blog'
+  },
+  {
+    label: 'Presse',
+    href: '/presse'
   },
   {
     label: 'Unser Freibad',
