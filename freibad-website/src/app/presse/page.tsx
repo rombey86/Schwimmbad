@@ -160,7 +160,7 @@ export default function PressePage() {
             ))}
           </div>
 
-          {pressArticles.length === 0 && (
+          {sortedArticles.length === 0 && (
             <div className="text-center py-16">
               <svg className="w-16 h-16 text-gray-400 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clipRule="evenodd" />
