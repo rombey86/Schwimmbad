@@ -23,8 +23,8 @@ export default function UnterstuetzenPage() {
               Unterstützen Sie unser Freibad
             </h1>
             <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto">
-              Gemeinsam können wir unser Freibad retten und für zukünftige Generationen erhalten. 
-              Jede Unterstützung zählt!
+              Das Bürgerbegehren kostet viel Zeit, Arbeit und Geld.
+              Ihre finanzielle Unterstützung hilft bei Anwaltskosten und weiteren Verfahren.
             </p>
           </div>
         </div>
@@ -149,10 +149,10 @@ export default function UnterstuetzenPage() {
           <div className="bg-white rounded-xl shadow-lg p-8">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Spenden für unser Freibad
+                Spenden für das Bürgerbegehren
               </h2>
               <p className="text-xl text-gray-600">
-                Ihre Spende kommt zu 100% unserem Freibad-Projekt zugute
+                Ihre Spende unterstützt die juristische Begleitung und weitere Kosten des Bürgerbegehrens
               </p>
             </div>
 
@@ -163,21 +163,21 @@ export default function UnterstuetzenPage() {
                   Bankverbindung
                 </h3>
                 <div className="bg-gray-50 rounded-lg p-6 space-y-3">
-                  <div className="flex justify-between">
+                  <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
                     <span className="text-gray-600">Empfänger:</span>
                     <span className="font-medium text-right">{contactInfo.bankDetails.recipient}</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Bank:</span>
-                    <span className="font-medium">{contactInfo.bankDetails.bank}</span>
+                  <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
+                    <span className="text-gray-600">Stichwort:</span>
+                    <span className="font-medium">"{contactInfo.bankDetails.subject}"</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
                     <span className="text-gray-600">IBAN:</span>
                     <span className="font-mono text-sm">{contactInfo.bankDetails.iban}</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
                     <span className="text-gray-600">BIC:</span>
-                    <span className="font-mono text-sm">{contactInfo.bankDetails.bic}</span>
+                    <span className="font-mono text-sm">{contactInfo.bankDetails.bic} {contactInfo.bankDetails.bank}</span>
                   </div>
                 </div>
                 
@@ -187,10 +187,10 @@ export default function UnterstuetzenPage() {
                       <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                     </svg>
                     <div>
-                      <p className="text-sm text-blue-800 font-medium">Spendenquittung</p>
+                      <p className="text-sm text-blue-800 font-medium">Steuerlich absetzbar</p>
                       <p className="text-sm text-blue-700">
-                        Geben Sie bei Spenden über 25€ Ihre Adresse im Verwendungszweck an, 
-                        um eine Spendenquittung zu erhalten.
+                        Bis 200 EUR reicht der Kontoauszug. Ab 200 EUR erhalten Sie bis Ende Januar
+                        eine Spendenquittung. Bitte Adresse im Verwendungszweck angeben.
                       </p>
                     </div>
                   </div>
@@ -212,9 +212,16 @@ export default function UnterstuetzenPage() {
                     </div>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600">
-                  Scannen Sie den QR-Code mit Ihrer Banking-App für eine schnelle Überweisung
+                <p className="text-sm text-gray-600 mb-4">
+                  Scannen Sie den SEPA-Code mit Ihrer Banking-App und geben Sie den gewünschten Betrag ein
                 </p>
+                <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+                  <div className="text-center">
+                    <p className="text-sm font-medium text-green-800 mb-1">Bereits eingegangene Spenden:</p>
+                    <p className="text-2xl font-bold text-green-600">7.410,26 €</p>
+                    <p className="text-xs text-green-600">Stand: 06.03.2022</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
