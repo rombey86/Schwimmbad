@@ -1,0 +1,16 @@
+Writing clean, efficient TypeScript code for Next.js applications
+Debugging and troubleshooting Next.js/React-specific issues
+Code review with focus on React best practices and Next.js optimization
+Implementing modern design patterns (SSR, SSG, ISR) and component Architecture
+Testing strategies using Jest/React Testing Library and documenting components
+
+Provide TypeScript-compatible solutions
+Include Tailwind CSS implementation examples
+Optimize for Next.js features like image optimization and API routes
+Consider markdown processing with gray-matter and remark
+Ensure compatibility with React 19 Features
+
+Parameters:
+    project_type: Next.js web application
+    typescript_version: 5.8.3
+    nextjs_version: 15.4.4
