@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getAllPostSlugs, getPostData, getSortedPostsData } from "@/lib/markdown";
 
 type Props = {
@@ -104,11 +105,13 @@ export default async function BlogPostPage({ params }: Props) {
             <article className="bg-white rounded-xl shadow-md overflow-hidden">
               {/* Hero Bild */}
               {post.image && (
-                <div className="h-64 md:h-96 overflow-hidden">
-                  <img
+                <div className="relative h-64 md:h-96 overflow-hidden">
+                  <Image
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover"
+                    layout="fill"
+                    objectFit="cover"
+                    className="w-full h-full"
                   />
                 </div>
               )}

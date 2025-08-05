@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import Hero from '@/components/Hero';
 import { getSortedPostsData } from '@/lib/markdown';
 
@@ -90,12 +91,14 @@ export default function Home() {
                   className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
                 >
                   {/* Bild */}
-                  <div className="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                  <div className="relative h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
                     {post.image ? (
-                      <img
+                      <Image
                         src={post.image}
                         alt={post.title}
-                        className="w-full h-full object-cover"
+                        layout="fill"
+                        objectFit="cover"
+                        className="w-full h-full"
                       />
                     ) : (
                       <svg className="w-16 h-16 text-white/50" fill="currentColor" viewBox="0 0 20 20">

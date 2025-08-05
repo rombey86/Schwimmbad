@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { heroStats } from '@/data/config';
 
 export default function Hero() {
@@ -6,10 +7,13 @@ export default function Hero() {
     <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden">
       {/* Hintergrund-Pattern */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src="/images/Freibad_Niederkrüchten_Bahnen_2017-scaled.jpg"
           alt="Freibad Niederkrüchten"
-          className="w-full h-full object-cover opacity-50"
+          layout="fill"
+          objectFit="cover"
+          className="opacity-50"
+          priority
         />
       </div>
 

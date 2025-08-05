@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { contactInfo } from '@/data/config';
 
 export const metadata: Metadata = {
@@ -288,10 +289,12 @@ export default function UnterstuetzenPage() {
                 </h3>
                 <div className="bg-gray-100 rounded-lg p-8 mb-4 flex items-center justify-center">
                   <div className="w-48 h-48 bg-white rounded-lg shadow-inner flex items-center justify-center">
-                    <img
+                                        <Image
                       src="https://cdn.builder.io/api/v1/image/assets%2F8421b3ac5f9145bcb19836cc73bc59c8%2Ffd6ec44290db46be87a8616753ccf1ca?format=webp&width=800"
                       alt="SEPA QR-Code für Spenden"
-                      className="w-44 h-44 object-contain"
+                      width={176}
+                      height={176}
+                      className="object-contain"
                     />
                   </div>
                 </div>

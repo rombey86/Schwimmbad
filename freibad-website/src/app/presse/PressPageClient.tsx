@@ -3,14 +3,13 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { pressArticles, getArticlesSortedByDate, PressArticle } from '@/data/press';
+import { PressArticle } from '@/data/press';
 
-export default function PressPageClient() {
+export default function PressPageClient({ articles }: { articles: PressArticle[] }) {
   const [selectedArticle, setSelectedArticle] = useState<PressArticle | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   
-  // Get articles sorted by date (newest first)
-  const sortedArticles = getArticlesSortedByDate();
+  const sortedArticles = articles;
 
   const openModal = (article: PressArticle) => {
     setSelectedArticle(article);

@@ -2,7 +2,7 @@
 title: "Heute wäre die Saison gestartet!"
 date: "2022-05-21"
 excerpt: "Heute wäre im Freibad Niederkrüchten die Saison gestartet."
-image: "https://www.rettet-das-freibad-niederkruechten.de/wp-content/uploads/2022/05/20220513-HP-Heute-waere-die-Saison-gestartet.png"
+image: "/images/Freibad_Niederkrüchten_Bahnen_2017-scaled.jpg"
 author: "Petitionsteam"
 tags: ["Freibad", "Niederkrüchten", "Modernisierung"]
 ---
