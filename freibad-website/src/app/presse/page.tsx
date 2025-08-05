@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import PressPageClient from './PressPageClient';
 import fs from 'fs';
 import path from 'path';
-import { PressArticle } from '@/data/press';
+import { PressArticle } from '@/types/press';
 
 export const metadata: Metadata = {
   title: 'Presse - Rettet das Freibad Niederkrüchten',
@@ -52,7 +52,7 @@ async function getPressArticles(): Promise<PressArticle[]> {
           source: source,
           filename: filename,
           description: `Presseartikel vom ${date}`,
-        };
+        } as PressArticle;
       })
       .filter((article): article is PressArticle => article !== null);
 

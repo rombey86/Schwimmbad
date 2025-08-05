@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { PressArticle } from '@/data/press';
+import { PressArticle } from '@/types/press';
 
 export default function PressPageClient({ articles }: { articles: PressArticle[] }) {
   const [selectedArticle, setSelectedArticle] = useState<PressArticle | null>(null);
