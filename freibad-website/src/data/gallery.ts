@@ -1,178 +1,194 @@
 import { GalleryImage } from '@/types';
 
 export const galleryImages: GalleryImage[] = [
-  // Bauphase
   {
     id: '1',
-    src: '/images/gallery/bauphase-1970.jpg',
-    alt: 'Baubeginn 1970 - Aushub der Schwimmbecken',
-    title: 'Baubeginn 1970',
-    description: 'Die ersten Bagger rücken an und beginnen mit dem Aushub für die Schwimmbecken.',
-    category: 'bauphase',
-    date: '1970-06-20'
+    src: '/images/20220211-HP-Buergerbegehren-2-und-3-Sammlung-gestartet-Jetzt-unterschreiben-BG.png',
+    alt: 'Bürgerbegehren Sammlung gestartet',
+    title: 'Bürgerbegehren Sammlung gestartet',
+    description: 'Bürgerbegehren Sammlung gestartet',
+    category: 'allgemein',
+    date: '2022-02-11'
   },
   {
     id: '2',
-    src: '/images/gallery/bauphase-1971.jpg',
-    alt: 'Baufortschritt 1971 - Betonarbeiten',
-    title: 'Betonarbeiten 1971',
-    description: 'Die Becken nehmen Form an - Betonarbeiten in vollem Gange.',
-    category: 'bauphase',
-    date: '1971-08-15'
+    src: '/images/20220821-HP-Freibad-Niederkruechten-ist-gerettet.png',
+    alt: 'Freibad Niederkrüchten ist gerettet',
+    title: 'Freibad Niederkrüchten ist gerettet',
+    description: 'Freibad Niederkrüchten ist gerettet',
+    category: 'allgemein',
+    date: '2022-08-21'
   },
   {
     id: '3',
-    src: '/images/gallery/eroeffnung-1972.jpg',
-    alt: 'Eröffnungsfeier 1972',
-    title: 'Große Eröffnungsfeier',
-    description: 'Über 2.000 Besucher feiern die Eröffnung des neuen Freibads.',
-    category: 'aktionstag',
-    date: '1972-05-01'
+    src: '/images/20220910-HP-Rueckblick-6052-Unterschriften-am-10.09.2018-ueberreicht.png',
+    alt: 'Rückblick 6052 Unterschriften',
+    title: 'Rückblick 6052 Unterschriften',
+    description: 'Rückblick 6052 Unterschriften',
+    category: 'allgemein',
+    date: '2022-09-10'
   },
-
-  // Allgemeine Bilder
   {
     id: '4',
-    src: '/images/gallery/schwimmerbecken-sommer.jpg',
-    alt: 'Schwimmerbecken an einem sonnigen Sommertag',
-    title: 'Perfekter Badetag',
-    description: 'Das Schwimmerbecken an einem herrlichen Sommertag mit vielen Badegästen.',
+    src: '/images/20221009-HP-Foerderantrag-fuer-das-Freibad-Niederkruechten-eingereicht.png',
+    alt: 'Förderantrag für das Freibad eingereicht',
+    title: 'Förderantrag für das Freibad eingereicht',
+    description: 'Förderantrag für das Freibad eingereicht',
     category: 'allgemein',
-    date: '2023-07-15'
+    date: '2022-10-09'
   },
   {
     id: '5',
-    src: '/images/gallery/sprungturm-action.jpg',
-    alt: 'Sprung vom 5-Meter-Turm',
-    title: 'Mutiger Sprung',
-    description: 'Ein Besucher wagt den Sprung vom 5-Meter-Turm.',
+    src: '/images/20221214-HP-2.85-Mio-Euro-Foerderung-fuer-das-Freibad-Niederkruechten.png',
+    alt: '2.85 Mio Euro Förderung',
+    title: '2.85 Mio Euro Förderung',
+    description: '2.85 Mio Euro Förderung',
     category: 'allgemein',
-    date: '2023-08-20'
+    date: '2022-12-14'
   },
   {
     id: '6',
-    src: '/images/gallery/kinderbecken-familie.jpg',
-    alt: 'Familie im Kinderbecken',
-    title: 'Familienspaß',
-    description: 'Kinder und Eltern genießen das warme Wasser im Kinderbecken.',
+    src: '/images/20230321-HP-Traum-vom-interkommunalen-Bad-geht-weiter-1.png',
+    alt: 'Traum vom interkommunalen Bad geht weiter',
+    title: 'Traum vom interkommunalen Bad geht weiter',
+    description: 'Traum vom interkommunalen Bad geht weiter',
     category: 'allgemein',
-    date: '2023-06-10'
+    date: '2023-03-21'
   },
-
-  // Aktionstage
   {
     id: '7',
-    src: '/images/gallery/sommerfest-2022.jpg',
-    alt: 'Sommerfest 2022 mit Live-Musik',
-    title: 'Sommerfest 2022',
-    description: 'Live-Musik und gute Stimmung beim jährlichen Sommerfest.',
-    category: 'aktionstag',
-    date: '2022-08-13'
+    src: '/images/20230426-HP-Freibadwiese-vom-Freibad-Niederkruechten-oeffnet-ab-Juni-2023.png',
+    alt: 'Freibadwiese öffnet ab Juni 2023',
+    title: 'Freibadwiese öffnet ab Juni 2023',
+    description: 'Freibadwiese öffnet ab Juni 2023',
+    category: 'allgemein',
+    date: '2023-04-26'
   },
   {
     id: '8',
-    src: '/images/gallery/schwimmkurs-kinder.jpg',
-    alt: 'Schwimmkurs für Kinder',
-    title: 'Schwimmkurs',
-    description: 'Kinder lernen schwimmen - ein wichtiger Beitrag zur Sicherheit.',
+    src: '/images/20230730-HP-Aktionstag-fuer-Familien-auf-der-Freibadwiese-war-ein-voller-Erfolg.png',
+    alt: 'Aktionstag für Familien war ein voller Erfolg',
+    title: 'Aktionstag für Familien war ein voller Erfolg',
+    description: 'Aktionstag für Familien war ein voller Erfolg',
     category: 'aktionstag',
-    date: '2023-07-01'
+    date: '2023-07-30'
   },
   {
     id: '9',
-    src: '/images/gallery/aqua-fitness.jpg',
-    alt: 'Aqua-Fitness-Kurs im Nichtschwimmerbecken',
-    title: 'Aqua-Fitness',
-    description: 'Gesundheit und Spaß bei der Aqua-Fitness im Nichtschwimmerbecken.',
-    category: 'aktionstag',
-    date: '2023-09-05'
+    src: '/images/20240220-HP-CDU-SPD-CWG-FDP-und-NWG-blockieren-Freibadplanung-trotz-eindeutigem-Buergerentscheid.png',
+    alt: 'Parteien blockieren Freibadplanung',
+    title: 'Parteien blockieren Freibadplanung',
+    description: 'Parteien blockieren Freibadplanung',
+    category: 'allgemein',
+    date: '2024-02-20'
   },
-
-  // Flyer und Werbung
   {
     id: '10',
-    src: '/images/gallery/flyer-eroeffnung-1972.jpg',
-    alt: 'Original-Flyer zur Eröffnung 1972',
-    title: 'Eröffnungsflyer 1972',
-    description: 'Der originale Werbeflyer zur Eröffnung unseres Freibads.',
-    category: 'flyer',
-    date: '1972-04-01'
+    src: '/images/20240222-nach-Sabotage-des-Buergerentscheids-fordert-SPD-Aktualisierung-der-Kosten.png',
+    alt: 'SPD fordert Aktualisierung der Kosten',
+    title: 'SPD fordert Aktualisierung der Kosten',
+    description: 'SPD fordert Aktualisierung der Kosten',
+    category: 'allgemein',
+    date: '2024-02-22'
   },
   {
     id: '11',
-    src: '/images/gallery/plakat-rettung-2023.jpg',
-    alt: 'Plakat der Rettungskampagne 2023',
-    title: 'Rettungskampagne',
-    description: 'Plakat der Kampagne "Rettet unser Freibad" aus dem Jahr 2023.',
-    category: 'flyer',
-    date: '2023-01-15'
+    src: '/images/20240224-HP-Foerderbescheid-fuer-Freibad-ist-unterwegs.png',
+    alt: 'Förderbescheid für Freibad ist unterwegs',
+    title: 'Förderbescheid für Freibad ist unterwegs',
+    description: 'Förderbescheid für Freibad ist unterwegs',
+    category: 'allgemein',
+    date: '2024-02-24'
   },
   {
     id: '12',
-    src: '/images/gallery/petition-uebergabe.jpg',
-    alt: 'Übergabe der Petition mit 5000 Unterschriften',
-    title: 'Petition-Übergabe',
-    description: 'Feierliche Übergabe der Petition mit über 5.000 Unterschriften.',
-    category: 'aktionstag',
-    date: '2023-08-20'
+    src: '/images/20240224-HP-Rat-erinnert-sich-nicht-an-9-Monaten-nicht-an-eigenen-Ratsbeschluss.png',
+    alt: 'Rat erinnert sich nicht an Ratsbeschluss',
+    title: 'Rat erinnert sich nicht an Ratsbeschluss',
+    description: 'Rat erinnert sich nicht an Ratsbeschluss',
+    category: 'allgemein',
+    date: '2024-02-24'
   },
-
-  // Weitere Bauphase
   {
     id: '13',
-    src: '/images/gallery/sprungturm-bau-1985.jpg',
-    alt: 'Bau des Sprungturms 1985',
-    title: 'Sprungturm-Bau',
-    description: 'Installation des 5-Meter-Sprungturms im Jahr 1985.',
-    category: 'bauphase',
-    date: '1985-07-15'
+    src: '/images/20240227-HP-Karrikatur-Wir-brauchen-neue-Zahlen.png',
+    alt: 'Karrikatur Wir brauchen neue Zahlen',
+    title: 'Karrikatur Wir brauchen neue Zahlen',
+    description: 'Karrikatur Wir brauchen neue Zahlen',
+    category: 'allgemein',
+    date: '2024-02-27'
   },
   {
     id: '14',
-    src: '/images/gallery/renovierung-umkleiden-1995.jpg',
-    alt: 'Renovierung der Umkleiden 1995',
-    title: 'Umkleiden-Renovierung',
-    description: 'Modernisierung der Umkleidekabinen und Sanitäranlagen.',
-    category: 'bauphase',
-    date: '1995-09-30'
+    src: '/images/20240310-HP-Wie-ein-Freibad-in-Ostritz-Sachsen-die-Demokratie-staerkt.png',
+    alt: 'Freibad in Ostritz stärkt Demokratie',
+    title: 'Freibad in Ostritz stärkt Demokratie',
+    description: 'Freibad in Ostritz stärkt Demokratie',
+    category: 'allgemein',
+    date: '2024-03-10'
   },
   {
     id: '15',
-    src: '/images/gallery/solaranlage-2010.jpg',
-    alt: 'Installation der Solaranlage 2010',
-    title: 'Solaranlage',
-    description: 'Installation der Solaranlage zur umweltfreundlichen Wassererwärmung.',
-    category: 'bauphase',
-    date: '2010-04-01'
+    src: '/images/20241124-HP-Neue-Abteilung-für-Rettungsschwimmerorganisation-gegründet.png',
+    alt: 'Neue Abteilung für Rettungsschwimmerorganisation gegründet',
+    title: 'Neue Abteilung für Rettungsschwimmerorganisation gegründet',
+    description: 'Neue Abteilung für Rettungsschwimmerorganisation gegründet',
+    category: 'allgemein',
+    date: '2024-11-24'
   },
-
-  // Weitere allgemeine Bilder
   {
     id: '16',
-    src: '/images/gallery/liegewiese-panorama.jpg',
-    alt: 'Panorama der Liegewiese',
-    title: 'Liegewiese-Panorama',
-    description: 'Weitläufige Liegewiese mit altem Baumbestand - perfekt zum Entspannen.',
-    category: 'allgemein',
-    date: '2023-05-20'
+    src: '/images/Flyer-Sperrvermerk-Seite-1.png',
+    alt: 'Flyer Sperrvermerk Seite 1',
+    title: 'Flyer Sperrvermerk Seite 1',
+    description: 'Flyer Sperrvermerk Seite 1',
+    category: 'flyer',
+    date: '2023-01-01'
   },
   {
     id: '17',
-    src: '/images/gallery/abendstimmung.jpg',
-    alt: 'Romantische Abendstimmung am Freibad',
-    title: 'Abendstimmung',
-    description: 'Magische Atmosphäre bei Sonnenuntergang über dem Freibad.',
-    category: 'allgemein',
-    date: '2023-08-30'
+    src: '/images/Flyer-Sperrvermerk-Seite-2.png',
+    alt: 'Flyer Sperrvermerk Seite 2',
+    title: 'Flyer Sperrvermerk Seite 2',
+    description: 'Flyer Sperrvermerk Seite 2',
+    category: 'flyer',
+    date: '2023-01-01'
   },
   {
     id: '18',
-    src: '/images/gallery/winter-schnee.jpg',
-    alt: 'Freibad im Winter mit Schnee',
-    title: 'Winterruhe',
-    description: 'Auch im Winter hat unser Freibad seinen besonderen Reiz.',
+    src: '/images/Flyer-Sperrvermerk-Seite-3.png',
+    alt: 'Flyer Sperrvermerk Seite 3',
+    title: 'Flyer Sperrvermerk Seite 3',
+    description: 'Flyer Sperrvermerk Seite 3',
+    category: 'flyer',
+    date: '2023-01-01'
+  },
+  {
+    id: '19',
+    src: '/images/Flyer-Sperrvermerk-Seite-4.png',
+    alt: 'Flyer Sperrvermerk Seite 4',
+    title: 'Flyer Sperrvermerk Seite 4',
+    description: 'Flyer Sperrvermerk Seite 4',
+    category: 'flyer',
+    date: '2023-01-01'
+  },
+  {
+    id: '20',
+    src: '/images/Freibad_Niederkrüchten_Bahnen_2017-scaled.jpg',
+    alt: 'Freibad Niederkrüchten Bahnen 2017',
+    title: 'Freibad Niederkrüchten Bahnen 2017',
+    description: 'Freibad Niederkrüchten Bahnen 2017',
     category: 'allgemein',
-    date: '2023-01-10'
+    date: '2017-01-01'
+  },
+  {
+    id: '21',
+    src: '/images/I-Love-Freibad-Niederkruechten-150px.png',
+    alt: 'I Love Freibad Niederkrüchten',
+    title: 'I Love Freibad Niederkrüchten',
+    description: 'I Love Freibad Niederkrüchten',
+    category: 'allgemein',
+    date: '2022-01-01'
   }
 ];
 
