@@ -13,7 +13,7 @@ const Comments: React.FC = () => {
     script.async = true;
     script.crossOrigin = 'anonymous';
 
-    script.setAttribute('data-repo', 'Schwimmbad/freibad-website');
+    script.setAttribute('data-repo', 'rombey86/Schwimmbad');
     script.setAttribute('data-repo-id', 'R_kgDOPUOG9A'); // I will provide instructions on how to get this
     script.setAttribute('data-category', 'Announcements'); // I will provide instructions on how to get this
     script.setAttribute('data-category-id', 'DIC_kwDOPUOG9M4Ct0yr'); // I will provide instructions on how to get this
