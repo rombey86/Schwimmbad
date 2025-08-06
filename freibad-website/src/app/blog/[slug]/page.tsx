@@ -118,12 +118,13 @@ export default async function BlogPostPage({ params }: Props) {
               )}
 
               {/* Content */}
-              <div className="p-8">
-                <div 
-                  className="prose prose-lg max-w-none prose-headings:text-black prose-p:text-black prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-strong:text-black prose-ul:text-black prose-ol:text-black prose-li:text-black"
-                  dangerouslySetInnerHTML={{ __html: post.content }} 
-                />
-              </div>
+              <div 
+                className="prose prose-lg max-w-none text-black
+                prose-headings:text-black prose-p:text-black
+                prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
+                prose-strong:text-black prose-ul:text-black prose-ol:text-black prose-li:text-black"
+                dangerouslySetInnerHTML={{ __html: post.content }} 
+              />
             </article>
 
             {/* Kommentarbereich */}
