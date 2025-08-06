@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllPostSlugs, getPostData, getSortedPostsData } from "@/lib/markdown";
+import Comments from '@/components/Comments';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -124,6 +125,14 @@ export default async function BlogPostPage({ params }: Props) {
                 />
               </div>
             </article>
+
+            {/* Kommentarbereich */}
+            <div className="mt-8 bg-white rounded-xl shadow-md p-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                Kommentare
+              </h2>
+              <Comments />
+            </div>
 
             {/* Navigation zu anderen Posts */}
             <div className="mt-8 flex justify-between items-center">
